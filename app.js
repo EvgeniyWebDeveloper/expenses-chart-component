@@ -2,7 +2,7 @@ const barValues=document.querySelectorAll('.graph_item-value')
 const bars=document.querySelectorAll('.graph__bar')
 const labels=document.querySelectorAll('.graph__label')
 
-async function getData(url='/data.json'){
+async function getData(url='http://EvgeniyWebDeveloper.github.io/mydata.json'){
     const response = await fetch(url)
     const data =await response.json()
     return data
